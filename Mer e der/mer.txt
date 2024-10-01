@@ -1,0 +1,8 @@
+Entidades:
+
+Entidade 1: Sobremesas
+
+Atributos Entidades:
+
+Atributos sobremesas: ID, Nome, Ano Criação, Origem e Calorias.
+
