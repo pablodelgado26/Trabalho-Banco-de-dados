@@ -208,3 +208,24 @@ INSERT INTO sobremesa (nome, origem, anoCriacao, calorias) VALUES
 ('Ensaimada', 'Espanha', 1700, 350),
 ('Leche Frita', 'Espanha', 1600, 300),
 ('Qatayef', 'Egito', 1800, 350);
+
+UPDATE sobremesa SET anoCriacao = 1900 WHERE id = 7;
+UPDATE sobremesa SET calorias = 700 WHERE origem = "Brasil";
+UPDATE sobremesa SET nome = "Brigadeiro" WHERE calorias = 150;
+UPDATE sobremesa SET origem = "Brasil" WHERE id = 8;
+UPDATE sobremesa SET anoCriacao = 2017 WHERE id = 9;
+UPDATE sobremesa SET calorias = 700 WHERE origem = "Brasil";
+UPDATE sobremesa SET nome = "Sorvete" WHERE anoCriacao = 1000;
+UPDATE sobremesa SET origem = "Portugal" WHERE nome = "Pavê";   
+UPDATE sobremesa SET anoCriacao = 1987 WHERE id = 11;
+UPDATE sobremesa SET calorias = 700 WHERE origem = "México";
+UPDATE sobremesa SET nome = "Pudim" WHERE calorias = > 400;
+UPDATE sobremesa SET origem = "Brasil" WHERE id = 12;
+UPDATE sobremesa SET calorias = 100 WHERE anoCriacao < 1999;   
+UPDATE sobremesa SET nome = "Cocada" WHERE origem = "Argentina";
+UPDATE sobremesa SET origem = "França" WHERE id = 50;
+UPDATE sobremesa SET anoCriacao = 2007 WHERE calorias = < 200;
+UPDATE sobremesa SET nome = "Merengue" WHERE id = 89;
+UPDATE sobremesa SET origem = "México" WHERE anoCriacao = 1800;
+UPDATE sobremesa SET calorias = 300 WHERE origem = "Grécia";
+UPDATE sobremesa SET nome = "Barfi" WHERE id = 97;
