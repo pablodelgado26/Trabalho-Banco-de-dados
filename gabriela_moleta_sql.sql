@@ -80,3 +80,11 @@ UPDATE sobremesa SET calorias = 300 WHERE origem = 'Turquia';
 UPDATE sobremesa SET calorias = 250 WHERE anoCriacao = 1980;
 UPDATE sobremesa SET nome = 'Pudim de Doce de Leite' WHERE calorias = 300;
 UPDATE sobremesa SET origem = 'Egito' WHERE calorias = 400;
+
+
+/*5 funções*/
+SELECT SUM(calorias) FROM sobremesa;
+SELECT COUNT(*) FROM sobremesa;
+SELECT AVG(calorias) FROM sobremesa;
+SELECT MAX(calorias) FROM sobremesa;
+SELECT MIN(calorias) FROM sobremesa;
