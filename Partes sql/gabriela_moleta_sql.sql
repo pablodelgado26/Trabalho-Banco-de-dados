@@ -1,7 +1,28 @@
+UPDATE sobremesa SET anoCriacao = 2000 WHERE calorias = 200;
+UPDATE sobremesa SET nome = 'Mousse de Chocolate' WHERE nome = 'Mousse de Maracuja';
+UPDATE sobremesa SET anoCriacao = 1930 WHERE id = 2;
+UPDATE sobremesa SET anoCriacao = 1500 WHERE calorias = 350;
+UPDATE sobremesa SET origem = 'Austrália' WHERE anoCriacao = 1900;
+UPDATE sobremesa SET origem = 'França' WHERE id = 3;
+UPDATE sobremesa SET nome = 'Gelato' WHERE id = 4;
+UPDATE sobremesa SET calorias = 500 WHERE nome = 'Tiramisu';
+UPDATE sobremesa SET nome = 'Pastelzinho Doce' WHERE anoCriacao = 1837;
+UPDATE sobremesa SET calorias = 450 WHERE origem = 'Brasil';
+UPDATE sobremesa SET origem = 'Japão' WHERE nome = 'Mochi';
+UPDATE sobremesa SET anoCriacao = 2000 WHERE nome = 'Cheesecake';
+UPDATE sobremesa SET nome = 'Biscoito de Amêndoas' WHERE origem = 'França';
+UPDATE sobremesa SET anoCriacao = 1985 WHERE origem = 'EUA';
+UPDATE sobremesa SET calorias = 380 WHERE anoCriacao = 1500;
+UPDATE sobremesa SET calorias = 300 WHERE origem = 'Turquia';
+UPDATE sobremesa SET calorias = 250 WHERE anoCriacao = 1980;
+UPDATE sobremesa SET nome = 'Pudim de Doce de Leite' WHERE calorias = 300;
+UPDATE sobremesa SET origem = 'Egito' WHERE calorias = 400;
+
+
 SELECT * FROM sobremesa WHERE origem = 'Brasil';
 SELECT * FROM sobremesa WHERE anoCriacao > 1800;
 SELECT nome, calorias FROM sobremesa WHERE calorias < 300;
-SELECT nome, origem FROM sobremesa WHERE origem = 'Portugal';
+SELECT nome, origem FROM sobremesa WHERE origem = 'PortugUPDATE sobremesa SET calorias = 420 WHERE id = 1;al';
 SELECT * FROM sobremesa WHERE anoCriacao = 1980;
 SELECT * FROM sobremesa WHERE calorias BETWEEN 200 AND 350;
 SELECT * FROM sobremesa WHERE nome LIKE '%de%';
@@ -58,3 +79,34 @@ SELECT nome, calorias FROM sobremesa WHERE calorias = 150;
 SELECT * FROM sobremesa WHERE nome LIKE '%da%' AND origem = 'Japao';
 SELECT * FROM sobremesa WHERE calorias > 200 AND origem = 'India';
 SELECT * FROM sobremesa WHERE origem = 'Turquia' AND calorias < 300;
+
+
+/*update:*/
+UPDATE sobremesa SET anoCriacao = 2000 WHERE calorias = 200;
+UPDATE sobremesa SET nome = 'Mousse de Chocolate' WHERE nome = 'Mousse de Maracuja';
+UPDATE sobremesa SET anoCriacao = 1930 WHERE id = 2;
+UPDATE sobremesa SET anoCriacao = 1500 WHERE calorias = 350;
+UPDATE sobremesa SET origem = 'Austrália' WHERE anoCriacao = 1900;
+UPDATE sobremesa SET origem = 'França' WHERE id = 3;
+UPDATE sobremesa SET nome = 'Gelato' WHERE id = 4;
+UPDATE sobremesa SET calorias = 500 WHERE nome = 'Tiramisu';
+UPDATE sobremesa SET nome = 'Pastelzinho Doce' WHERE anoCriacao = 1837;
+UPDATE sobremesa SET calorias = 450 WHERE origem = 'Brasil';
+UPDATE sobremesa SET origem = 'Japão' WHERE nome = 'Mochi';
+UPDATE sobremesa SET anoCriacao = 2000 WHERE nome = 'Cheesecake';
+UPDATE sobremesa SET nome = 'Biscoito de Amêndoas' WHERE origem = 'França';
+UPDATE sobremesa SET anoCriacao = 1985 WHERE origem = 'EUA';
+UPDATE sobremesa SET calorias = 380 WHERE anoCriacao = 1500;
+UPDATE sobremesa SET calorias = 300 WHERE origem = 'Turquia';
+UPDATE sobremesa SET calorias = 250 WHERE anoCriacao = 1980;
+UPDATE sobremesa SET nome = 'Pudim de Doce de Leite' WHERE calorias = 300;
+UPDATE sobremesa SET origem = 'Egito' WHERE calorias = 400;
+UPDATE sobremesa SET calorias = 420 WHERE id = 1;
+
+
+/*5 funções*/
+SELECT SUM(calorias) FROM sobremesa;
+SELECT COUNT(*) FROM sobremesa;
+SELECT AVG(calorias) FROM sobremesa;
+SELECT MAX(calorias) FROM sobremesa;
+SELECT MIN(calorias) FROM sobremesa;
