@@ -1,3 +1,4 @@
+--Deletar dados da tabela sobremesa.
 DELETE FROM sobremesa WHERE origem = 'Italia';
 DELETE FROM sobremesa WHERE anoCriacao < 1900;
 DELETE FROM sobremesa WHERE calorias > 300;
@@ -58,31 +59,3 @@ DELETE FROM sobremesa WHERE nome = 'Baklava' AND calorias <= 300;
 DELETE FROM sobremesa WHERE origem = 'Africa do Sul' AND anoCriacao > 1600;
 DELETE FROM sobremesa WHERE nome = 'Merengon' AND calorias < 350;
 DELETE FROM sobremesa WHERE origem = 'Turquia' AND nome LIKE '%de%';
-
-UPDATE sobremesa SET calorias = 500 WHERE nome = 'Tiramisu';
-UPDATE sobremesa SET anoCriacao = 1930 WHERE nome = 'Cheesecake';
-UPDATE sobremesa SET origem = 'França' WHERE nome = 'Creme Brulee';
-UPDATE sobremesa SET calorias = 380 WHERE nome = 'Brownie';
-UPDATE sobremesa SET nome = 'Brigadeiro Gourmet', calorias = 250 WHERE origem = 'Brasil';
-UPDATE sobremesa SET calorias = 450 WHERE nome = 'Pavlova';
-UPDATE sobremesa SET nome = 'Mochi Tradicional', origem = 'Japão' WHERE anoCriacao = 794;
-UPDATE sobremesa SET anoCriacao = 1500 WHERE nome = 'Rabanada';
-UPDATE sobremesa SET calorias = 400, origem = 'Grécia' WHERE origem = 'Baklava';
-UPDATE sobremesa SET calorias = 370 WHERE nome = 'Churros';
-UPDATE sobremesa SET calorias = 320 WHERE nome = 'Pudim';
-UPDATE sobremesa SET anoCriacao = 1900 WHERE nome = 'Sorvete';
-UPDATE sobremesa SET origem = 'Itália' WHERE nome = 'Panna Cotta';
-UPDATE sobremesa SET nome = 'Mousse de Maracujá com Chantilly', calorias = 450 WHERE nome = 'Mousse de Maracuja';
-UPDATE sobremesa SET origem = 'França' WHERE nome = 'Macaron';
-UPDATE sobremesa SET calorias = 420 WHERE nome = 'Quindim';
-UPDATE sobremesa SET anoCriacao = 1750 WHERE origem = 'Portugal';
-UPDATE sobremesa SET calorias = 380 WHERE nome = 'Banoffee Pie';
-UPDATE sobremesa SET calorias = 250, origem = 'Brasil' WHERE nome = 'Beijinho';
-UPDATE sobremesa SET anoCriacao = 1950, calorias = 400 WHERE nome = 'Cocada';
-
-/* 5 Funções*/
-SELECT LENGTH(nome) FROM sobremesa;
-SELECT UPPER(nome) FROM sobremesa;
-SELECT LOWER(nome) FROM sobremesa;
-SELECT REPLACE(nome, 'Pudim', 'Pudding') FROM sobremesa;
-SELECT SUBSTRING(nome, 1, 5) FROM sobremesa;

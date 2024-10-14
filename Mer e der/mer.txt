@@ -1,8 +1,9 @@
-Entidades:
+Entidade: Sobremesa
 
-Entidade 1: Sobremesas
+Atributos:
 
-Atributos Entidades:
-
-Atributos sobremesas: ID, Nome, Ano Criação, Origem e Calorias.
-
+ID (Chave primária),
+Nome (Atributo obrigatório),
+Ano Criação (Ano em que a sobremesa foi criada),
+Origem (País ou local de origem),
+Calorias (Valor energético em calorias).
