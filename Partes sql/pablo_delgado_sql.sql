@@ -1,3 +1,4 @@
+-- Criando funções para manipulação de strings na tabela sobremesas.
 SELECT SUM(calorias) FROM sobremesa;
 SELECT COUNT(*) FROM sobremesa;
 SELECT AVG(calorias) FROM sobremesa;
@@ -47,3 +48,14 @@ SELECT nome, calorias, NTH_VALUE(calorias, 2) OVER (ORDER BY nome) AS segundo_va
 SELECT nome, calorias, NTILE(4) OVER (ORDER BY calorias) AS quartil FROM sobremesa;
 SELECT nome, calorias, VARIANCE(calorias) OVER () AS variancia FROM sobremesa;
 SELECT nome, calorias, CUME_DIST() OVER (ORDER BY calorias) AS cume_dist FROM sobremesa;
+SELECT SUM(calorias) FROM sobremesa;
+SELECT COUNT(*) FROM sobremesa;
+SELECT AVG(calorias) FROM sobremesa;
+SELECT MAX(calorias) FROM sobremesa;
+SELECT MIN(calorias) FROM sobremesa;
+SELECT LENGTH(nome) FROM sobremesa;
+SELECT UPPER(nome) FROM sobremesa;
+SELECT LOWER(nome) FROM sobremesa;
+SELECT REPLACE(nome, 'Pudim', 'Pudding') FROM sobremesa;
+SELECT SUBSTRING(nome, 1, 5) FROM sobremesa;
+SELECT TRIM(nome) FROM sobremesa;
