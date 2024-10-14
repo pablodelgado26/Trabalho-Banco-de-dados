@@ -229,3 +229,9 @@ UPDATE sobremesa SET nome = "Merengue" WHERE id = 89;
 UPDATE sobremesa SET origem = "México" WHERE anoCriacao = 1800;
 UPDATE sobremesa SET calorias = 300 WHERE origem = "Grécia";
 UPDATE sobremesa SET nome = "Barfi" WHERE id = 97;
+
+SELECT LOWER (nome) AS nome, origem, anoCriacao, calorias FROM sobremesa WHERE id = 1;
+SELECT LOWER (nome) AS nome, origem, anoCriacao, calorias FROM sobremesa WHERE id = 1 OR id = 2;
+SELECT LOWER (nome) AS nome, origem, anoCriacao, calorias FROM sobremesa WHERE id = 1 AND id = 2;
+SELECT LOWER (nome) AS nome, origem, anoCriacao, calorias FROM sobremesa WHERE id = 1 AND id <> 2;
+SELECT LOWER (origem) AS nome, origem, anoCriacao, calorias FROM sobremesa WHERE id = 1 OR id <> 2;
